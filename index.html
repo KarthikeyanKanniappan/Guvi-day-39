@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hall booking application</title>
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">Hall booking application</h2>
+    <hr style="width: 250px" />
+    <h2>About Rooms</h2>
+    <div>
+      <b>Number of Seat available</b>:<span>300 Seats</span><br />
+      <ul>
+        <b>Amenities:</b
+        ><br />
+        <li>Free Parking</li>
+        <li>Audio Visual Equipment</li>
+        <li>Big Dinning hall</li>
+      </ul>
+    </div>
+    <h3>Price for an Hour is around $100</h3>
+    <hr />
+    <div>
+      <h2 style="text-align: left">Booking a Room</h2>
+      <form action="/" method="post">
+        <input type="text" name="name1" placeholder="Customer name" />
+        <input type="text" name="name2" placeholder="Date" />
+        <p></p>
+        <label>Start Time</label>
+        <input type="time" id="appt" name="app1">
+        <label>End Time</label>
+        <input type="time" id="appt" name="app2"></br>
+        <p></p>
+        <input type="text" name="name3" placeholder="RoomID" />
+        <p></p>
+        <button type="submit" name="submit">Book</button>
+      </form>
+      <p></p>
+    </div>
+    <hr>
+<div>
+    <h3>List of all room Booked </h3>
+    <table style="width:100%">
+        <tr>
+            <th>Room Id</th>
+            <th>booked status</th>
+            <th>customer name</th>
+            <th>Date</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+        </tr>
+        <tbody style="text-align:center">
+<tr>
+    <td>1</td>
+    <td>Booked</td>
+    <td>Vikki</td>
+    <td>Dec 25th 2022</td>
+    <td>9 AM</td>
+    <td>9 PM</td>
+</tr>
+<tr>
+    <td>1</td>
+    <td>Booked</td>
+    <td>vijay</td>
+    <td>Jan 01st 2023</td>
+    <td>17 PM</td>
+    <td>11 AM</td>
+</tr>
+<tr>
+    <td>1</td>
+    <td>Free</td>
+    <td>Waiting</td>
+    <td>Waiting</td>
+    <td>Waiting</td>
+    <td>Waiting</td>
+</tr>
+        </tbody>
+    </table>
+</div>
+<p></p>
+<hr>
+  </body>
+</html>
