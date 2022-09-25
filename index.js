@@ -1,8 +1,7 @@
 let express = require("express");
 let app = express();
-require("dotenv").config();
 const bodyParser = require("body-parser");
-
+const PORT = process.env.PORT || 3000;
 app.use(
   bodyParser.urlencoded({
     extended: true,
@@ -28,6 +27,6 @@ app.post("/", (req, res) => {
   res.send(final);
 });
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log("server listening on port 3000");
+app.listen(PORT, () => {
+  console.log(`server listening on port ${PORT}`);
 });
